@@ -18,7 +18,7 @@
         }
         .header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .header h2 {
             margin: 0;
@@ -26,41 +26,43 @@
             color: #ffffff;
         }
         .header p {
-            margin: 4px 0 0;
-            font-size: 12px;
+            margin: 2px 0 0;
+            font-size: 11px;
             color: #8f9cae;
         }
         .card {
             background: #181d27;
             border-radius: 12px;
-            padding: 16px;
+            padding: 12px;
             width: 100%;
             max-width: 360px;
             box-sizing: border-box;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             border: 1px solid #28303f;
         }
         .section-title {
-            font-size: 12px;
+            font-size: 11px;
             color: #8f9cae;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
         .pair-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            margin-bottom: 16px;
+            gap: 6px;
+            margin-bottom: 12px;
+            max-height: 160px;
+            overflow-y: auto;
         }
         .btn-option {
             background: #212836;
             border: 1px solid #323d52;
             color: #fff;
-            padding: 10px 4px;
-            border-radius: 8px;
+            padding: 8px 2px;
+            border-radius: 6px;
             text-align: center;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 600;
             cursor: pointer;
         }
@@ -72,7 +74,7 @@
         .time-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
+            gap: 6px;
         }
         .main-btn {
             background: linear-gradient(90deg, #ff6b00 0%, #ff8800 100%);
@@ -80,22 +82,22 @@
             color: #ffffff;
             width: 100%;
             max-width: 360px;
-            padding: 16px;
+            padding: 14px;
             border-radius: 12px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             cursor: pointer;
-            margin-top: 10px;
+            margin-top: 5px;
             box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
         }
         .result-box {
             display: none;
-            margin-top: 16px;
-            padding: 12px;
+            margin-top: 12px;
+            padding: 10px;
             border-radius: 8px;
             text-align: center;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
         }
         .buy { background: #1b382b; color: #00e676; border: 1px solid #00e676; }
         .sell { background: #3a1c24; color: #ff5252; border: 1px solid #ff5252; }
@@ -105,15 +107,21 @@
 
     <div class="header">
         <h2>Claude Trade Bot</h2>
-        <p>mini app</p>
+        <p>mini app - All Markets</p>
     </div>
 
     <div class="card">
-        <div class="section-title">Select Pair</div>
+        <div class="section-title">Select Market / Pair</div>
         <div class="pair-grid">
             <div class="btn-option active" onclick="selectPair(this)">EUR/USD</div>
-            <div class="btn-option" onclick="selectPair(this)">EUR/CHF</div>
-            <div class="btn-option" onclick="selectPair(this)">EUR/JPY</div>
+            <div class="btn-option" onclick="selectPair(this)">EUR/USD OTC</div>
+            <div class="btn-option" onclick="selectPair(this)">GBP/USD OTC</div>
+            <div class="btn-option" onclick="selectPair(this)">EUR/CHF OTC</div>
+            <div class="btn-option" onclick="selectPair(this)">EUR/JPY OTC</div>
+            <div class="btn-option" onclick="selectPair(this)">AUD/USD OTC</div>
+            <div class="btn-option" onclick="selectPair(this)">USD/CAD OTC</div>
+            <div class="btn-option" onclick="selectPair(this)">BTC/USDT</div>
+            <div class="btn-option" onclick="selectPair(this)">ETH/USDT</div>
         </div>
 
         <div class="section-title">Trade Time</div>
